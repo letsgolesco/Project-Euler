@@ -26,3 +26,9 @@ for i in range(10):
     s += count[i] * i
 
 print s
+
+# Somebody in the forums had a Python one-liner:
+# > reduce(lambda x, y: x + y, [int(i) for i in str(reduce(lambda x, y: x * y, range(1, 100)))])
+#
+# You can use Python's built-in `sum` function to make this a tad simpler:
+# > sum([int(i) for i in str(reduce(lambda x, y: x * y, range(1, 100)))])
