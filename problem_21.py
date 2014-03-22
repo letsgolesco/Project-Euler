@@ -24,7 +24,7 @@ amicable = []
 def d(n):
     total = 0
     # Find all the low divisors by iterating up to the square root
-    for x in range(1, int((math.sqrt(n)))):
+    for x in range(1, int(math.sqrt(n))):
         # If divisor, add it to the total
         if n % x == 0:
             total += x
